@@ -6,11 +6,9 @@ export const EditprofileSlice = createSlice({
     addProfile: (state, action) => {
       state.push(action.payload);
     },
-    updateProfile: (state, action) => {
-      return state.map((item) =>
-        item.id === action.payload.id ? { ...item, ...action.payload } : item
-      );
-    },
+   updateProfile: (state, action) => {
+  state[0] = { ...state[0], ...action.payload };
+},
     deleteProfile:(state,action)=>{
      return [];
     }

@@ -1,7 +1,11 @@
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
+import { useEffect } from "react";
 const Account = () => {
   const profile = useSelector((state) => state.editprofile);
+  useEffect(()=>{
+  //  for mounting the component;
+  },[profile])
   return (
     <>
       <div className="account-wrapper bg-gray-100 xs:p-0.5 lg:p-1">
@@ -13,7 +17,7 @@ const Account = () => {
             <div className="image-container flex justify-center items-center flex-col rounded-2xl xs:p-1.5">
               <img
                 src={
-                  profile?.profilephoto ||
+                  profile[0]?.profilephoto ||
                   "https://pfpmaker.com/content/img/profile-pictures/aesthetic/4.png"
                 }
                 alt=""

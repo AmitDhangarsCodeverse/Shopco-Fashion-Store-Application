@@ -225,7 +225,7 @@ const Category = () => {
                     categorydata.slice(0, 10).map((items) => (
                       <div className="product-container m-2.5" key={items.id}>
                         <div
-                          className="product-image rounded-2xl border-2 border-dotted border-gray-300 "
+                          className="product-image rounded-2xl border-2 border-dotted border-gray-300 w-fit "
                           onClick={() => setstoredValue(items.id)}
                         >
                           <Link to={"/productdetails"}>
@@ -233,7 +233,7 @@ const Category = () => {
                             <img
                               src={items?.images[0]}
                               alt=""
-                              className="lg:h-28 xl:h-36 rounded-2xl"
+                              className="lg:h-28 xl:h-36 rounded-2xl hover:scale-95"
                             />
                           </Link>
                         </div>

@@ -10,7 +10,7 @@ const TopSelling = () => {
   const [error, seterror] = useState("");
    // viewall products
   const [viewmore,setviewmore] = useState(false);
-  const [defaultProducts,setdefaultProducts] = useState(4);
+  const [defaultProducts,setdefaultProducts] = useState(8);
   const [storedValue,setstoredValue] = useLocalStorage("items");
   const fetchingProducts = async () => {
     try {
@@ -31,7 +31,7 @@ const TopSelling = () => {
       setdefaultProducts(25);
     }
     else{
-      setdefaultProducts(4);
+      setdefaultProducts(8);
     }
   },[viewmore])
 
@@ -58,7 +58,7 @@ const TopSelling = () => {
           )}
         </div>
         <div className="products-utimate-wrapper grid xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4">
-          {product&&product.slice(0,defaultProducts).map((items) =>(
+          {product&&product.slice(4,defaultProducts).map((items) =>(
             <div
               className="product-wrapper cursor-pointer xs:m-3"
               id={items.id}

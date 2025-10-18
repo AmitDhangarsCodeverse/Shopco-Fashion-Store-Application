@@ -3,11 +3,15 @@ import { useDispatch, useSelector } from "react-redux";
 import { addProfile, updateProfile } from "../slices/editprofile";
 const EditProfile = () => {
   const profileDetails = useSelector((state) => state.editprofile);
+  console.log(profileDetails);
+
   const dispatchAction = useDispatch();
 
-const [profile, setprofile] = useState(() => {
-  return profileDetails.length === 1 ? profileDetails[0]?.profile : "https://pfpmaker.com/content/img/profile-pictures/aesthetic/4.png";
-});
+  const [profile, setprofile] = useState(() => {
+    return profileDetails.length === 1
+      ? profileDetails[0]?.profile
+      : "https://pfpmaker.com/content/img/profile-pictures/aesthetic/4.png";
+  });
 
   const editProfileFields = {
     profile: "",
@@ -76,17 +80,19 @@ const [profile, setprofile] = useState(() => {
 
   // Profile Updation
   const handleUpdationandSubmit = () => {
-    let updatedProfile;
-    updatedProfile = { ...profilefields, profilephoto: profile };
+    let updatedProfileDetails;
+    updatedProfileDetails = { ...profilefields, profilephoto: profile };
     setprofilefields(editProfileFields);
     if (!isupdate) {
-       setstoredValue(updatedProfile);
-      dispatchAction(addProfile(updatedProfile));
+      if (!profileDetails[0]) {
+        dispatchAction(addProfile(updatedProfileDetails));
+      }
       setisupdate(!isupdate);
     }
-    setstoredValue(updatedProfile);
     setprofilefields(profilefields);
-    dispatchAction(updateProfile(updateProfile));
+    console.log(updateProfile);
+    
+    dispatchAction(updateProfile(updatedProfileDetails));
     setisupdate(!isupdate);
   };
   return (
@@ -114,7 +120,11 @@ const [profile, setprofile] = useState(() => {
               </div>
             </div>
             <div className="username">
-              <p>{profileDetails.length ===1 ? profileDetails[0]?.name : "Lorem Singh"}</p>
+              <p>
+                {profileDetails.length === 1
+                  ? profileDetails[0]?.name
+                  : "Lorem Singh"}
+              </p>
             </div>
           </div>
         </div>
