@@ -26,7 +26,7 @@ img {
 
 /* Deal Bar */
 .signup-msg {
-  font-size: clamp(.35rem, 1.5vw, .65rem);
+  font-size: clamp(.35rem, 1.5vw, .75rem);
 }
 
 .ri-xrp-line {
@@ -40,11 +40,11 @@ img {
 
 .logo {
   font-family: "Integral CF";
-  font-size: clamp(0.9rem, 2vw, 1.2rem);
+  font-size: clamp(0.9rem, 2vw, 1.6rem);
 }
 
 .menu-links ul li {
-  font-size: clamp(0.5rem, 1.4vw, 0.8rem);
+  font-size: clamp(0.5rem, 1.4vw, .9rem);
   cursor: pointer;
 }
 
@@ -61,7 +61,7 @@ img {
 }
 
 .cart-account-section i {
-  font-size: clamp(0.85rem, 2vw, 1rem);
+  font-size: clamp(0.85rem, 2vw, 1.1rem);
   cursor: pointer;
 }
 
@@ -579,9 +579,20 @@ i {
 /* Slide Menu  */
 .slide-menu .menu-links .shop-co-headline h1{
     font-family: "Integral CF";
-  font-size: clamp(.8rem, 2.5vw, 1.8rem);
+  font-size: clamp(.8rem, 2.5vw, 1.9rem);
 }
-
+.slide-menu .menu-links ul li{
+  font-size: clamp(.7rem, 2vw, .8rem);
+}
+.slide-menu .menu-links ul li i{
+  font-size: clamp(1rem, 2.2vw, 1.2rem);
+}
+.slide-menu .menu-links .shop-co-headline i{
+  font-size: clamp(.8rem, 2.5vw, 1.3rem);
+}
+.slide-menu .copyright p{
+  font-size: clamp(.5rem, 1.5vw, .6rem);
+}
 /* preloader */
 .preloader .shopco .logo {
    font-family: "Integral CF";

@@ -118,7 +118,7 @@ const ProductDetails = () => {
                       src={item}
                       alt={`product-${id}`}
                       onClick={() => setcurImg(id)}
-                      className="xs:h-16 sm:h-20 md:h-24 lg:h-24 xl:h-32 cursor-pointer"
+                      className="xs:h-[88px] sm:h-[100px] md:h-[120px] lg:h-24 xl:h-32 cursor-pointer"
                     />
                   </div>
                 ))}
@@ -286,11 +286,6 @@ const ProductDetails = () => {
                     </div>
                   </div>
                 ))}
-            </div>
-            <div className="viewall flex justify-center items-center">
-              <p className="viewall-btn border-gray border rounded-2xl px-8 p-1 cursor-pointer">
-                View All
-              </p>
             </div>
           </div>
         </div>

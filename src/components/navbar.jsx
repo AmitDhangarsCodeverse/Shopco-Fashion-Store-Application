@@ -80,7 +80,7 @@ const Navbar = () => {
                   </li>
                 </div>
                 <div
-                  className="options bg-white  xs:hidden  absolute lg:top-[55px] xl:top-[65px] lg:rounded-br-xl lg:rounded-bl-xl lg:px-3 lg:py-1"
+                  className="options bg-white  xs:hidden  absolute lg:top-[42px] xl:top-[50px] lg:rounded-br-xl lg:rounded-bl-xl lg:px-3 lg:py-1"
                   ref={optionRef}
                   style={{ display: showHide ? "inline-block" : "none" }}
                   onMouseLeave={() =>
@@ -134,7 +134,7 @@ const Navbar = () => {
               />
             </div>
             <div
-              className="search-result overflow-y-auto flex absolute bg-white border-b xs:w-full xs:left-0 xs:top-[41px] xs:rounded-b-xl  lg:left-auto lg:w-[35%] lg:top-[55px] xl:top-[65px] lg:rounded-br-xl lg:rounded-bl-2xl
+              className="search-result overflow-y-auto flex absolute bg-white xs:w-full xs:left-0 xs:top-[32px] xs:rounded-b-xl  lg:left-auto lg:w-[35%] lg:top-[40px] xl:top-[54px] lg:rounded-br-xl lg:rounded-bl-2xl
              "
               onMouseLeave={() => {
                 searchRef.current.style.display = "none";

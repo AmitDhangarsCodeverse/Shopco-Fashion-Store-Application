@@ -37,7 +37,7 @@ const BrowseByDressStyle = () => {
             {/* dress-style- */}
             <Link to={"/category"}>
               <div
-                className="dress-style bg-white flex justify-between items-start overflow-hidden  xs:rounded-2xl xs:p-2 md:p-2.5 lg:p-3 xl:p-6 2xl:p-9 cursor-pointer xs:w-full sm:w-[280px] md:w-[320px] xl:w-[700px]"
+                className="dress-style bg-white flex justify-between items-start overflow-hidden  xs:rounded-2xl xs:p-2 md:p-2.5 lg:p-3 xl:p-6 2xl:p-9 cursor-pointer xs:w-full sm:w-[280px] md:w-[320px] xl:w-[600px]"
                 onClick={() => setstoredValue("Formal")}
               >
                 <div className="dress-style-name z-10">
@@ -56,7 +56,7 @@ const BrowseByDressStyle = () => {
             {/* dress-style- */}
             <Link to={"/category"}>
               <div
-                className="dress-style bg-white flex justify-between items-start overflow-hidden xs:rounded-2xl xs:p-2 md:p-2.5 lg:p-3 xl:p-6 2xl:p-9 cursor-pointer xs:w-full sm:w-[280px] md:w-[320px] xl:w-[700px]"
+                className="dress-style bg-white flex justify-between items-start overflow-hidden xs:px-9 lg:px-6 xs:rounded-2xl xs:p-2 md:p-2.5 lg:p-3 xl:p-6 2xl:p-9 cursor-pointer xs:w-full sm:w-[280px] md:w-[320px] xl:w-[600px]"
                 onClick={() => setstoredValue("Party")}
               >
                 <div className="dress-style-name z-10">
@@ -74,7 +74,7 @@ const BrowseByDressStyle = () => {
             {/* dress-style- */}
             <Link to={"/category"}>
               <div
-                className="dress-style bg-white flex justify-between items-start lg:ml-2.5 overflow-hidden xs:rounded-2xl xs:p-2 md:p-2.5 lg:p-3 xl:p-6 2xl:p-9 cursor-pointer xs:w-full sm:w-[280px] md:w-[320px] xl:w-[400px]"
+                className="dress-style bg-white flex justify-between items-start lg:ml-2.5 overflow-hidden xs:px-10 xl:px-0 lg:px-6 xs:rounded-2xl xs:p-2 md:p-2.5 lg:p-3 xl:p-6 2xl:p-9 cursor-pointer xs:w-full sm:w-[280px] md:w-[320px] xl:w-[400px]"
                 onClick={() => setstoredValue("Gym")}
               >
                 <div className="dress-style-name z-10">
